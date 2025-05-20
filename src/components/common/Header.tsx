@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Button from '@/components/ui/Button';
 import Image from 'next/image';
-import { Menu, X } from 'lucide-react'; // You need to install this if not already
+import { Menu, X } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
@@ -14,7 +14,6 @@ const Header: React.FC = () => {
   return (
     <header className="bg-[#2b63d9] py-6 border-b border-[#648ef7] relative z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Logo */}
         <div className="flex items-center space-x-4">
           <Link href="/">
             <Image
@@ -27,7 +26,6 @@ const Header: React.FC = () => {
           </Link>
         </div>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link href="/" className="text-white font-semibold text-[15px]">
             Home
@@ -68,7 +66,6 @@ const Header: React.FC = () => {
           </Link>
         </nav>
 
-        {/* Desktop Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <Link href="/login" className="text-white font-semibold text-[15px]">
             Log in
@@ -81,7 +78,6 @@ const Header: React.FC = () => {
           </Button>
         </div>
 
-        {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
@@ -93,7 +89,6 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#2b63d9] border-t border-[#648ef7] px-4 pb-4 pt-2 space-y-3">
           <Link href="/" className="block text-white font-semibold text-[15px]">
@@ -103,7 +98,6 @@ const Header: React.FC = () => {
             Our Products
           </Link>
 
-          {/* Mobile Resources */}
           <div>
             <button
               className="flex items-center text-white font-semibold text-[15px] w-full"
@@ -136,8 +130,7 @@ const Header: React.FC = () => {
           <Link href="#contacts" className="block text-white font-semibold text-[15px]">
             Contacts
           </Link>
-
-          {/* Mobile Buttons */}
+          
           <div className="pt-4 border-t border-[#648ef7]">
             <Link href="/login" className="block text-white font-semibold text-[15px] mb-2">
               Log in

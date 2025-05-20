@@ -133,7 +133,6 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Desktop specific graphic (original structure) */}
             <div className="hidden lg:block relative">
               <div className="relative w-[488px] h-[656px] bg-[#3971e7] rounded-lg">
                 <Image

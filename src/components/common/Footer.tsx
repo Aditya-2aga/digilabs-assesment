@@ -10,7 +10,6 @@ const Footer: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle newsletter subscription
     console.log('Subscribing email:', email);
     setEmail('');
     alert('Thank you for subscribing!');
@@ -20,7 +19,6 @@ const Footer: React.FC = () => {
     <footer className="bg-[#151b27] text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
           <div>
             <Image 
               src="/images/img_company_logo_white_a700_40x160.svg" 
@@ -34,7 +32,6 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Resources */}
           <div>
             <h3 className="text-[16px] font-semibold mb-6">Resources</h3>
             <ul className="space-y-4">
@@ -61,7 +58,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Products */}
           <div>
             <h3 className="text-[16px] font-semibold mb-6">Products</h3>
             <ul className="space-y-4">
@@ -88,7 +84,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
           <div>
             <h3 className="text-[16px] font-semibold mb-4">Get Email Notifications</h3>
             <p className="text-[#a5abb9] mb-4">
@@ -113,7 +108,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Footer */}
         <div className="mt-12 pt-6 border-t border-[#2e3445] flex flex-col md:flex-row justify-between items-center">
           <p className="text-[#a5abb9] text-center md:text-left mb-4 md:mb-0">
             © 2023 Lookscout. All Rights Reserved.
